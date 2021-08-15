@@ -316,6 +316,7 @@ window.initFilterSelect = () => {
             if ($selector.data('mode') === 'create') {
 
                 $selector.attr('data-value', $(this).val())
+                $selector.find('input').trigger('change') // 需要在 data-value 改變時 trigger('change')
 
             } else {
 
@@ -355,10 +356,3 @@ window.initFilterSelect = () => {
     }
 
 }
-
-/*
-$(function () {
-
-    initFilterSelect()
-})
-*/
