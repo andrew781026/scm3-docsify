@@ -1,3 +1,7 @@
+/**
+ * Docsify config
+ */
+
 window.$docsify = {
     el: "#app",
     loadSidebar: true,

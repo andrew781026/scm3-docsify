@@ -1,14 +1,14 @@
 
 # 可篩選的下拉選單 ( filter_select )
 
-## 簡介
+## 緣起
 
 scm3 跟 ecm 有許多需要在下拉選單中有搜尋的功能 , 因此前端團隊製作了 `filter_select` 元件
 
-目前內涵的功能如下 : 
-- 可篩選
-- 可清除現有選擇
-- 切換成自由輸入模式
+目前的功能如下 : 
+- 可篩選 ( filterable )
+- 可清除現有選擇 ( clearable )
+- 切換成自由輸入模式 ( allow-create )
 
 ## 快速開始
 
@@ -72,6 +72,13 @@ scm3 跟 ecm 有許多需要在下拉選單中有搜尋的功能 , 因此前端�
 
 ### 參數
 
+#### scroll-height
+
+- 類型 : String ( 可設定任意的高度 ex: `200px` . `10rem` . `3em` )
+- 預設值 : undefined ( 不限制高度 ) 
+
+設定下拉選單的高度
+
 #### allow-create
 
 設定用於切換到 create mode 的 value 值
@@ -88,7 +95,7 @@ scm3 跟 ecm 有許多需要在下拉選單中有搜尋的功能 , 因此前端�
 
 #### data-json
 
-- 類型 : Array<{value,text}> 
+- 類型 : Array< { value , text } >  
 
 下拉選單中的可選項目 `value` = 項目值 , `text` = 項目文字 
 
@@ -100,9 +107,11 @@ scm3 跟 ecm 有許多需要在下拉選單中有搜尋的功能 , 因此前端�
 
 > data-mode = 'create' 
 
-設定 `allow-create` , 當選擇的項目的 value 跟 allow-create 相同時 , 會開啟 create 模式
+create 模式 , 不顯示下拉選單 , 但可以任意輸入文字 
 
-create 模式 , 不顯示閜拉選單 , 但可以任意輸入文字 
+![](https://i.imgur.com/YBIlAsl.png)
+
+設定 `allow-create` 的文字 , 當被選擇的項目 `value 與 allow-create 相同` 時 , 會開啟 create 模式
 
 ![](https://i.imgur.com/H6ETtBf.gif)
 

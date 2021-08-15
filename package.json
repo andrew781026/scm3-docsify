@@ -2,12 +2,15 @@
   "name": "test-docsify",
   "version": "0.0.1",
   "description": "",
+  "homepage": "https://scm3-ecm-componenets.web.app/",
   "directories": {
     "doc": "docs"
   },
   "main": "index.js",
   "scripts": {
-    "serve": "docsify serve docs"
+    "serve": "docsify serve docs",
+    "deploy": "firebase deploy",
+    "emulators:start": "firebase emulators:start"
   },
   "author": "andrew",
   "license": "MIT"
