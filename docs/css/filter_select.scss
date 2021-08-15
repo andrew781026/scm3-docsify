@@ -1,0 +1,151 @@
+@import 'colors';
+
+.main .container-body .row-group .filter-select > input[type='text'] {
+  padding-right: 24px;
+}
+
+.filter-select {
+
+  position: relative;
+  display: inline; // div 不換行
+
+  > input[type='text'] {
+    padding-right: 24px;
+  }
+
+  input:focus {
+    outline-color: $primarycolor;
+  }
+
+  input::placeholder {
+    color: $graylight-2;
+  }
+
+  .corner{
+    display: none;
+  }
+
+  i.close {
+    display: none;
+    position: absolute;
+    right: 14px;
+    transform: translate(3px, 3px);
+  }
+
+  i.arrow {
+    position: absolute;
+    right: 20px;
+    transition: 0.3s transform;
+    transform: translate(8px, 5px);
+  }
+
+  &.opened {
+
+    i.arrow {
+      transform: translate(8px, 5px) rotate(180deg);
+    }
+  }
+
+  &.has-data:hover {
+
+    i.close {
+      display: inline;
+    }
+
+    i.arrow {
+      display: none;
+    }
+  }
+
+  &[data-mode='create'] {
+
+    i.close {
+      display: inline;
+    }
+
+    i.arrow {
+      display: none;
+    }
+
+    // 顯示加號
+    .corner {
+      display: flex;
+      position: absolute;
+      //padding: 0 8px 8px 0;
+      left: 0;
+      top: -3px;
+      color: #fff;
+      border-radius: 6px 0 0 0;
+
+      // tool : https://bennettfeely.com/clippy/
+      //clip-path: polygon(0 0, 0% 100%, 100% 0);
+      //background-color: #d43114;
+
+      // 左上三角形 : https://www.jb51.net/css/650462.html
+      border: 8px solid $primarycolor;
+      height: 0;
+      width: 0;
+      border-right-color: transparent;
+      border-bottom-color: transparent;
+
+      // 顯示加號
+      &::after {
+        content: '+';
+        position: absolute;
+        left: -8px;
+        top: -10px;
+        color: #fff;
+      }
+    }
+
+  }
+
+  &[disabled], &[disabled]:hover {
+
+    i.close {
+      display: none;
+    }
+
+    i.arrow {
+      display: none;
+    }
+  }
+}
+
+.fri-select-dropdown__item {
+  font-size: 14px;
+  padding: 0 20px;
+  position: relative;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: #606266;
+  height: 34px;
+  line-height: 34px;
+  box-sizing: border-box;
+  cursor: pointer;
+
+  &:hover, &.hover {
+    background-color: #f5f7fa;
+  }
+
+  &.info {
+    text-align: center;
+    user-select: none;
+    cursor: inherit;
+  }
+
+  &.info:hover {
+
+    background-color: inherit;
+  }
+
+  &.selected {
+    color: $primarycolor;
+    font-weight: 700;
+  }
+
+  .fri-select-dropdown__item {
+    margin: 8px;
+  }
+}

@@ -1,3 +1,7 @@
+:root {
+    --primarycolor: #60ba9a;
+}
+
 .vuep {
     outline: 1px solid #333333;
 }

@@ -3,7 +3,7 @@ window.$docsify = {
     loadSidebar: true,
     name: '',
     repo: '',
-    homepage: "README.md",
+    homepage: "index.md",
     vueComponents: {
         'button-counter': {
             template: `

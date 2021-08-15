@@ -2,15 +2,4 @@
 
 
 * [HOME](./)
-* [TEMP](./temp)
-* [double](./double-wing-layout)
-* [Translucent](./translucent-borders)
-
-* [Tutorials](./tutorials/index)
-  * [Tomcat](./tutorials/tomcat/index)
-  * [Cloud](./tutorials/cloud/index)
-  * [Java](./tutorials/java/index)
-
-* [About](./about/index)
-
-* [Contact](./contact/index)
+* [可篩選的下拉選單](./filter_select)

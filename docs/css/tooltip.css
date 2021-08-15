@@ -1,0 +1,16 @@
+/* change some jBox styling */
+.jBox-Tooltip .jBox-container, .jBox-Mouse .jBox-container {
+    border-color: var(--primarycolor);
+}
+
+.jBox-content {
+    color: var(--primarycolor);
+}
+
+.jBox-pointer:after {
+    border: 1px solid var(--primarycolor);
+}
+
+.jBox-container .jBox-content {
+    line-height: 1.5em;
+}
