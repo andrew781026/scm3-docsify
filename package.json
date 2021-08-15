@@ -1,0 +1,14 @@
+{
+  "name": "test-docsify",
+  "version": "0.0.1",
+  "description": "",
+  "directories": {
+    "doc": "docs"
+  },
+  "main": "index.js",
+  "scripts": {
+    "serve": "docsify serve docs"
+  },
+  "author": "andrew",
+  "license": "MIT"
+}
