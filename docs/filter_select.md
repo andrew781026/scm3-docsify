@@ -9,6 +9,8 @@ scm3 跟 ecm 有許多需要在下拉選單中有搜尋的功能 , 因此前端�
 - 可篩選 ( filterable )
 - 可清除現有選擇 ( clearable )
 - 切換成自由輸入模式 ( allow-create )
+- 資料量過大 , 自動分頁處理 ( scroll-paging )
+- 可取得遠端資料 ( can-remote )
 
 ## 快速開始
 
