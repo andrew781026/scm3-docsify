@@ -13,5 +13,9 @@
     "emulators:start": "firebase emulators:start"
   },
   "author": "andrew",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "docsify-cli": "^4.4.3",
+    "firebase-tools": "^9.16.6"
+  }
 }
