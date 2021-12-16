@@ -147,3 +147,9 @@ view mode 顯示被選擇項目的 text
 ```javascript
 $('.filter-select > input').on('change',changeHandler)
 ```
+
+### 方法
+
+|||
+|--|--|
+|||
